@@ -11,7 +11,7 @@ import defineProperty from './define-property'
 import { CommerceError } from './errors'
 
 export type ResponseState<Result> = responseInterface<Result, CommerceError> & {
-  isLoading: boolean
+  isLoading?: boolean
 }
 
 export type UseData = <Data = any, FetchInput extends HookFetchInput = {}>(

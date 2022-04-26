@@ -10,7 +10,7 @@ interface Props {
   className?: string
   product: Product
   variant?: 'slim' | 'simple'
-  imgProps?: Omit<ImageProps, 'src'>
+  imgProps?: Omit<ImageProps, 'src' | 'placeholder' | 'blurDataURL'>
 }
 
 const placeholderImg = '/product-img-placeholder.svg'
