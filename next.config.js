@@ -5,6 +5,7 @@ const isBC = commerce.provider === 'bigcommerce'
 const isShopify = commerce.provider === 'shopify'
 
 module.exports = withCommerceConfig({
+  target: 'serverless',
   commerce,
   i18n: {
     locales: ['en-US', 'es'],
