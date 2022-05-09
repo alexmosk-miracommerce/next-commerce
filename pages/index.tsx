@@ -32,6 +32,7 @@ export async function getStaticProps({
       pages,
     },
     revalidate: 14400,
+    fallback: true,
   }
 }
 
